@@ -1,140 +1,122 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly)
 
-# Exercise Template Title
+# Bookmark'd ( MINI PROJECT )
 
-![a blank billboard mounted in tall grass with a clear blue sky](https://images.unsplash.com/photo-1528402671825-9a525ab8b5b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+![](https://fthmb.tqn.com/N8UHZxApLqho5sUDbpSRyEy1tV8=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/Bookmarks-56d0cca45f9b5879cc7123a4.jpg)
 
-#### Learning Objectives
-
-- Practice writing learning objectives
+Your goal for this week's homework is to build a bookmark app that lets users add a title and a link to save websites in one neat list.
 
 #### Prerequisites
 
-- Introduction to markdown files
-- Working knowlege of prerequisites
-
-#### Recommendations
-
-- If homework is taking you more than 4 hours to complete:
-    - Get on Zoom with a classmate
-    - Go to TA hours
-    - Reach out to the instructional team during class time to schedule a 1:1 meeting
-    - Don't stress about the Hungry For More section
-- If home work is taking you less than 4 hours to complete
-    - Work on the Hungry For More section - make the most of your time here and find challenges
-    - Help someone who is stuck, teaching is a great way to learn something more in depth
-    - Reach out to the instructional team for more challenges/ways to keep growing with your abilities
-    - [Prepare for the next day](preparation.md)
+- Git
+- JavaScript
+- Node / Express
+- Mongo / Mongoose
+- React
 
 ---
 
-## **Getting Started**
+## The Bookmarks App
 
-1) [**Fork and clone**](https://git.generalassemb.ly/SEIR-Margaret/ForkAndClone) this repository (if you haven't already)
+You will be building an app that lets users add a title and a link to save websites in one neat list. When users click on a title, it should take them to the linked website. 
 
-2) Create a file called `solutions.js` (this is where you will store your solutions)
+> :exclamation: GOTCHA - when testing it out, note that your links must start with http or https or else it will error!
 
-3) Read the instructions below
+_Example:_
 
-4) Complete the exercise below (at least attempt each problem)
+![](https://i.imgur.com/yq9Ygeu.png)
 
-5) Submit your homework (see bottom of markdown)
+✨ Fun Fact: This homework was inspired by a coding challenge used during a company's hiring process. So, treat it like you're trying to get that job!
 
-## **Instructions**
+## MVP 
 
-- Try your best to write a template
-- Be detail-oriented, and don't leave anything out
+Listed below is the basic required functionality that your Bookmark'd app should have. Some of the user stories are purposefully ambiguous to allow you all to ‘solve’ the problems in a way that is intuitive and makes sense to you, as opposed to just checking off specific steps from homework. 
 
-## **Tips:**
+#### Express API
+  - You should have a model for bookmarks that has the following schema:
+      ```
+      title: string
+      url: string
+       ```
+   - You should have routes for...
+      - Index: Getting all bookmarks
+      - Create: Posting a new bookmark
+      - Delete: Deleting a bookmark
+      - Update: Updating a bookmark
+      - **Make sure you TEST ALL ROUTES with postman or CURL BEFORE you move onto creating the frontend!** 
 
-- If you're stuck on something for "too long" or get overly frustrated, make a comment for yourself and move on. Return to it later. You may find some later problems easier. Sometimes taking a break and coming back later with fresh eyes is all you need.
+#### React Frontend User Stories
+  - As a user, I can see a list of all my bookmarks when I visit the page
+  - As a user, I can click on one of my bookmarks and have it take me to the linked website
+  - As a user, I can create a new bookmark and see that it immediately loads on the page so that I know I successfully added a bookmark
+  - As a user, I can delete a bookmark so I can keep my list relevant
+  - As a user, I can update a bookmark in case I made a typo or the URL changed
 
-- **You are not alone!** Everyone else in the class is working on this as well. Send Slack messages, make a Zoom channel, or meet with the TA to discuss sticking points.
+#### Additional Requirements
+- Your app must have styling! If you're maxing out on your 4 hours per night, spend 10 minutes adding some basic styling just so we know you know how, and leave a note in your git issue. If you're not maxing out on your 4 hours per night, you app should have portfolio quality styling or basic styling and H4M attempts. 
 
-## **Problems**
+:red_circle: **Remember to commit often!**
+Because your workflow & the way you decide to tackle finishing this app is up to you, it's also up to you what you commit! Commit often and write helpful commit messages. 
 
-### 1) Problem Title
+## Need Some Guidance?
 
-A problem for students to solve.
+While we suggest just trying to build off the user stories and specifications given above, it can be hard to know where to get started! So provided below are some slightly more guided steps to get you started.
 
-> Some useful advice
+  <details>
+   <summary><strong>Start with the back end</strong></summary>
 
----
-#### &#x1F534; The commit message should read: <br> "Solved problem 1"
----
+   - Create an express app
+     - what npm packages do you need?
+   - Connect it to mongo with mongoose
+   - Create a schema that has the following
+      ```
+      title: string
+      url: string ( remember: the links must start with http/https )
+      ```
+   - Create the routes (full CRUD)
+   - Test the routes using Postman (or using cURL)
+  </details>
 
-### 2) Problem Title
+   <details>
+   <summary><strong>Move on to the front end</strong></summary>
 
-A problem for students to solve.
+   - Your front end should display:
+      - An index of a clickable list of the title of each bookmark that takes you to the url of your bookmark
+      - A working form to add a new record to the database.
+        - When the data is submitted and processed, the page should immediately reflect the changes
 
-<details><summary>Hint 1</summary>
+  </details>
 
- This is a hint about how to solve this problem
+## Hungry for More?
 
-</details>
-
-<details><summary>Hint 2</summary>
-
- This hint is more helpful
-
-</details>
-
-<details><summary>Hint 3</summary>
-
- This hint gives a lot away
-
-</details>
-
----
-#### &#x1F534; The commit message should read: <br> "Solved problem 2"
----
-
-### 3) Problem Title
-
-A problem for students to solve.
-
----
-#### &#x1F534; The commit message should read: <br> "Solved problem 3"
----
-
-### Hungry for More?
-> These are bonus problems to stretch your abilities
-
----
-
-### 1) Hungry Problem Title
-
-An extra difficult problem for students to solve.
-
----
-#### &#x1F534; The commit message should read: <br> "Solved Hungry for More"
----
-
-## Technical Requirements
-- A JavaScript file that runs without syntax errors (comment out stuff that doesn't work)
-- At least one commit message per problem
+  - Make a searchbox that will filter the bookmark titles
+  - Order the bookmarks alphabetically by title using mongoose or react
+  - Make it so that the form clears after submit
+  - Add an array of tags to the schema so you can organize your bookmarks by tags
+  - As a user, I should not be able to add a duplicate bookmark so I can keep my list clean
+  - Add some authorization to your app. Some possible user stories you can try:
+      - As a user, I can only use the app if I am logged in
+      - As a user, I can see everyone's bookmarks
+      - As a user, I can only update/delete my own bookmarks
 
 ---
 
 ## Deliverables
-- Show that you attempted each problem (hungry for more is bonus)
 
+A completed bookmarks app that meets all the MVP requirements outlined above by the dates below.
+
+## Submission Guidelines 
+
+This assignment is due Friday @10am ET.
+
+- **READ and CREATE should be completed by Friday @ 10am ET**. If you want or need feedback on this part of the assignment, create a git issue and submit it. If this part of the assignment is working 100% and you don't want feedback, do not create a git issue yet.
+- **UPDATE and DELETE should be completed by Monday @ 10am ET** On Tueaday, you will have an addition assignment. Schedule accordingly. Again, if you want feedback on any of this, feel free to create a git issue. If it's working 100% and you don't want feedback, do not create a git issue yet.
+- **Authentication and the final app submission is due Tuesday @10am ET** Everyone must create a git issue. 
+
+## Technical Requirements
+
+1. Your app (both back and frontend) MUST run without syntax errors. If there are errors you can't solve, comment them out and leave a comment above explaining what is wrong
+  
 ---
 
-## **Submission Guidelines**
-
-- You should have been adding and committing along the way, but please type `git status` one last time to make sure that everything is commited. If it's not, please add, commit, and push it so we can see all your work!
-- To submit your homework, follow the instructions found in the [wiki](https://git.generalassemb.ly/SEIR-Margaret/class-recordings-and-info/blob/master/submitting-homework.md). 
-- When you try to submit an issue, there will be a form that looks like shown below, please fill it out before you create the issue so that we can see how you're doing/feeling so far!
-
-![](https://i.imgur.com/39jmFEX.png)
-
----
-
-*Copyright 2019, General Assembly Space. Licensed under [CC-BY-NC-SA, 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
-
----
-
-Creator: Kay Vail<br>
-    Modified by: <br>
----
+*Copyright 2020, General Assembly Space. Licensed under [CC-BY-NC-SA, 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
