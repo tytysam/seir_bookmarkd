@@ -6,7 +6,7 @@
 
 1) [**Fork and clone**](https://git.generalassemb.ly/SEIR-Margaret/ForkAndClone) this repository into your `w08d04` directory
 
-2) **Do:** [this exercise template](exercise.md)
+2) **Do:** [Bookmark'd](exercise.md)
 
 3) **Submit:** via GitHub issues. Follow the instructions found in the [wiki](https://git.generalassemb.ly/SEIR-Margaret/class-recordings-and-info/blob/master/submitting-homework.md).
 
