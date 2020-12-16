@@ -53,7 +53,7 @@ Listed below is the basic required functionality that your Bookmark'd app should
   - As a user, I can update a bookmark in case I made a typo or the URL changed
 
 #### Additional Requirements
-- Your app must have styling! If you're maxing out on your 4 hours per night, spend 10 minutes adding some basic styling just so we know you know how, and leave a note in your git issue. If you're not maxing out on your 4 hours per night, you app should have portfolio quality styling or basic styling and H4M attempts. 
+- Your app must have styling! If you're maxing out on your 4 hours per night, spend 10 minutes adding some basic styling just so we know you know how, and leave a note in your git issue. If you're not maxing out on your 4 hours per night, your app should have portfolio quality styling or basic styling and H4M attempts. 
 
 :red_circle: **Remember to commit often!**
 Because your workflow & the way you decide to tackle finishing this app is up to you, it's also up to you what you commit! Commit often and write helpful commit messages. 
@@ -110,7 +110,7 @@ A completed bookmarks app that meets all the MVP requirements outlined above by 
 This assignment is due Friday @10am ET.
 
 - **READ and CREATE should be completed by Friday @ 10am ET**. If you want or need feedback on this part of the assignment, create a git issue and submit it. If this part of the assignment is working 100% and you don't want feedback, do not create a git issue yet.
-- **UPDATE and DELETE should be completed by Monday @ 10am ET** On Tueaday, you will have an addition assignment. Schedule accordingly. Again, if you want feedback on any of this, feel free to create a git issue. If it's working 100% and you don't want feedback, do not create a git issue yet.
+- **UPDATE and DELETE should be completed by Monday @ 10am ET** On Tuesday, you will have an addition assignment. Schedule accordingly. Again, if you want feedback on any of this, feel free to create a git issue. If it's working 100% and you don't want feedback, do not create a git issue yet.
 - **Authentication and the final app submission is due Tuesday @10am ET** Everyone must create a git issue. 
 
 ## Technical Requirements
