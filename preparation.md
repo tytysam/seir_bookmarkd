@@ -2,10 +2,6 @@
 
 #  W08D04 Prepare For the Next Day
 
-## Content Heading
-
-This is where you write an overview of the content. 
-
 ## Watch
 > Video is roughly 4,294,967,295 minutes long j/k its 10 minutes or so
 
