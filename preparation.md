@@ -9,7 +9,7 @@ This is where you write an overview of the content.
 ## Watch
 > Video is roughly 4,294,967,295 minutes long j/k its 10 minutes or so
 
-- [A video about templates](https://www.youtube.com/watch?v=8ZtInClXe1Q)
+- [How NOT to Store Passwords](https://www.youtube.com/watch?v=8ZtInClXe1Q)
 
 ## Read
 
