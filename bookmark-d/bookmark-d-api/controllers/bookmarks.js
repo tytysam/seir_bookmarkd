@@ -29,6 +29,18 @@ bookmarks.delete("/:id", async (req, res) => {
 });
 
 // Update | PUT Request
+bookmarks.put("/:id", async (req, res) => {
+  try {
+    const updatedBookmark = await Bookmark.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+    res.status(200).json(updatedBookmark);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
 // Create | POST Request
 bookmarks.post("/", async (req, res) => {

@@ -20,20 +20,9 @@ function App() {
       </header>
 
       {/* APP CHECKLIST
-
-      BACK END...
-      • Create an express app
-      • Connect it to MongoDB
-      • Create a schema (with a title + url)
-      • Create your routes (Create, Read, Update, Destroy)
-      • Test the routes using Postman
-      • 
-
       FRONT END...
       • You need an index of a clickable list of bookmark titles that takes you to the url of your bookmark
       • You need a working form to add new bookmark records to the database 
-  
-      
       
        */}
     </div>
