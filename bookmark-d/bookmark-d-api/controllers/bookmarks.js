@@ -1,6 +1,31 @@
+// ==========================
+//       DEPENDENCIES
+// ==========================
 const express = require("express");
 const bookmarks = express.Router();
 const Bookmark = require("../models/bookmarks.js");
+const jwt = require("jsonwebtoken");
+const SECRET = process.env.SECRET;
+
+// ==========================
+//       AUTHORIZATION
+// ==========================
+
+const auth = async (req, res, next) => {
+  const { authorization } = req.headers;
+  if (authorization) {
+    const token = authorization.split(" ")[1];
+    try {
+      const payload = await jwt.verify(token, SECRET);
+      req.user = payload;
+      next();
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  } else {
+    res.status(400).json(new Error("No token in header."));
+  }
+};
 
 // ==========================
 //       I.N.D.U.C.E.S.
